@@ -30,7 +30,7 @@ body {
   
   .products {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(3,1fr);
     gap: 20px;
   }
   
@@ -71,6 +71,9 @@ body {
   .card-img-top{
     max-width:200px;
     margin:auto;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
   }
   
   footer {
@@ -116,4 +119,13 @@ main {
 }
 #navbarNav {
   justify-content: end;
+}
+
+.car-text{
+  height: 200px;
+  overflow-y: hidden;
+}
+.car-title{
+  height: 24px;
+  overflow-y: hidden;
 }

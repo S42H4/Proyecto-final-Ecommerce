@@ -14,8 +14,8 @@
         <div class="container">
           <a class="navbar-brand" href="#"> E-commerce</a>
           <form class="form-inline my-2 my-md-0 ml-auto">
-            <input class="form-control mr-sm-2" type="text" placeholder="Buscar productos" aria-label="Buscar">
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+            <input class="form-control mr-sm-2" type="text" placeholder="Buscar productos" aria-label="Buscar" id="input-search">  
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit" id="btn-search">Buscar</button>
           </form>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -41,47 +41,39 @@
             precio
           </button>
           <ul class="dropdown-menu">
-            <li class="dropdown-item"> De mayor a menor</li>
-            <li class="dropdown-item"> De menor a mayor</li>
+            <li class="dropdown-item" id="filter-mayor-menor"> De mayor a menor</li>
+            <li class="dropdown-item" id="filter-menor-mayor"> De menor a mayor</li>
           </ul>
-        </div>
+        </div> 
+     <div class="dropdown">
+       <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+         Nombre
+      </button>
+      <ul class="dropdown-menu">
+         <li class="dropdown-item" id="A-Z">A-Z</li>
+         <li class="dropdown-item" id="Z-A">Z-A</li>
+     </ul>
+     </div>
         <div class="dropdown">
           <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Nombre
+            categoria
           </button>
           <ul class="dropdown-menu">
-            <li class="dropdown-item">A-Z</li>
-            <li class="dropdown-item">Z-A</li>
+            <li class="dropdown-item" id="category-man">Hombre</li>
+            <li class="dropdown-item" id="category-woman">Mujer</li>
+            <li class="dropdown-item" id="category-child">Niño</li>
           </ul>
         </div>
       </div>
     </section>
-   <h2>Nuestro catálogo</h2>
+   <h2 id="title-page">Nuestro catálogo</h2>
     
     <section class="products">
-        <div class="card" style="width: 18rem;">
-            <img src="https://remerasya.com/media/catalog/product/cache/839e5c25c645eac744603bf9726fb4fd/b/u/buzo_hombre_negro_1.jpg" class="card-img-top" alt="product">
-            <div class="card-body">
-              <h5 class="card-title">Buzo Cuello Redondo de Friza Pesadas</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">$5000</h6>
-              <p class="card-text">Fabricado en Friza Invisible Pesada Algodón/Poliester.
-                Interior Frizado para una excelente suavidad.
-            </p>
-              <button class=" btn-cart">Añadir al carrito</button>
-            </div>
-          </div>
       <!-- Repite el bloque .product para cada producto que desees mostrar -->
     </section>
      <div class="container cont-pag">
-    <ul class="pagination">
-      <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
-      <li class="page-item active"><a class="page-link" href="#">1</a></li>
-      <li class="page-item"><a class="page-link" href="#">2</a></li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
-      <li class="page-item"><a class="page-link" href="#">4</a></li>
-      <li class="page-item"><a class="page-link" href="#">5</a></li>
-      <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
-    </ul>
+    <ul class="pagination" >
+     
   </div>
   </main>
   
@@ -117,7 +109,7 @@
       <p class="text-center">&copy; 2023  E-commerce. Todos los derechos reservados.</p>
     </div>
   </footer>
-
+<script src="script/Index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </body>
