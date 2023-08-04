@@ -59,13 +59,23 @@
       margin-bottom: 100px;
       text-align: center;
     }
+    .btn-quantity{
+      width: 30px;
+      height: 30px;
+      border: solid 1px rgb(0, 0, 0);
+      border-radius: 99999px;
+    }
+    .btn-quantity:hover{
+      background-color:rgba(42, 43, 42, 0.39);
+
+    }
   </style>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <div class="container">
-              <a class="navbar-brand" href="#">E-commerce</a>
+              <a class="navbar-brand" href="./index.html">E-commerce</a>
               <form class="form-inline my-2 my-md-0 ml-auto">
                 <input class="form-control mr-sm-2" type="text" placeholder="Buscar productos" aria-label="Buscar">
                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
@@ -75,8 +85,9 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
+                  <li class="nav-item" id="cart-container">
                     <a class="nav-link" href="#">Carrito</a>
+                    <span id="cant-prod-carr">0</span>
                   </li>
                 </ul>
                
@@ -88,58 +99,15 @@
         <div class="container cont-cart">
             <h1>Carrito de Compras</h1>
               <h6>3 productos</h6>
-            <div class="cart-item">
-              <div class="row">
-                <div class="col-md-2">
-                  <img src="https://remerasya.com/media/catalog/product/cache/839e5c25c645eac744603bf9726fb4fd/b/u/buzo_hombre_negro_1.jpg" alt="Imagen del producto" class="img-fluid">
-                </div>
-                <div class="col-md-8">
-                  <h3>Producto 1</h3>
-                  <p>Precio: $99.99</p>
-                  <p>Cantidad: 1</p>
-                </div>
-                <div class="col-md-2">
-                  <button class="btn btn-danger remove-btn">Eliminar</button>
-                </div>
-              </div>
             </div>
-        
-            <div class="cart-item">
-              <div class="row">
-                <div class="col-md-2">
-                  <img src="https://remerasya.com/media/catalog/product/cache/839e5c25c645eac744603bf9726fb4fd/b/u/buzo_hombre_negro_1.jpg" alt="Imagen del producto" class="img-fluid">
-                </div>
-                <div class="col-md-8">
-                  <h3>Producto 2</h3>
-                  <p>Precio: $49.99</p>
-                  <p>Cantidad: 2</p>
-                </div>
-                <div class="col-md-2">
-                  <button class="btn btn-danger remove-btn">Eliminar</button>
-                </div>
-              </div>
-            </div>
-        
-            <div class="cart-item">
-              <div class="row">
-                <div class="col-md-2">
-                  <img src="https://remerasya.com/media/catalog/product/cache/839e5c25c645eac744603bf9726fb4fd/b/u/buzo_hombre_negro_1.jpg" alt="Imagen del producto" class="img-fluid">
-                </div>
-                <div class="col-md-8">
-                  <h3>Producto 3</h3>
-                  <p>Precio: $19.99</p>
-                  <p>Cantidad: 3</p>
-                </div>
-                <div class="col-md-2">
-                  <button class="btn btn-danger remove-btn">Eliminar</button>
-                </div>
-              </div>
-            </div>
-        
-            <div class="total">
-              <h3>Total: $319.92</h3>
-              <button class="btn btn-primary checkout-btn">Pagar</button>
-            </div>
+          </div>
+
+          <div class="total">
+            <h3 id="total">Total: $</h3>
+            <a href="./compra.html"> 
+              <button class="btn btn-primary checkout-btn" >Pagar</button>
+            </a>
+            
           </div>
     </main>
     <footer class="bg-dark text-light py-4">
@@ -178,5 +146,6 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./script/carrito.js"></script>
 </body>
 </html>

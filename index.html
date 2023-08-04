@@ -22,8 +22,9 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Carrito</a>
+              <li class="nav-item" id="cart-container">
+                <a class="nav-link" href="./carrito.html">Carrito</a>
+                <span id="cant-prod-carr">0</span>
               </li>
             </ul>
            
@@ -59,6 +60,7 @@
             categoria
           </button>
           <ul class="dropdown-menu">
+            <li class="dropdown-item" id="all-products">Todo</li>
             <li class="dropdown-item" id="category-man">Hombre</li>
             <li class="dropdown-item" id="category-woman">Mujer</li>
             <li class="dropdown-item" id="category-child">Niño</li>
@@ -73,7 +75,7 @@
     </section>
      <div class="container cont-pag">
     <ul class="pagination" >
-     
+    </ul>
   </div>
   </main>
   

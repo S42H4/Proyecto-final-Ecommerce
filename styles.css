@@ -129,3 +129,17 @@ main {
   height: 24px;
   overflow-y: hidden;
 }
+
+#cant-prod-carr{
+  color: white;
+}
+#cart-container{
+  align-items: center;
+  display: flex;
+}
+.product-in-card{
+  background-color:rgb(192, 12, 42);
+}
+.product-in-card:hover{
+background-color:rgb(192, 12, 42);
+}
